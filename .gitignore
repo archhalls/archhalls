@@ -1,0 +1,5 @@
+# Не заливать на GitHub:
+# 1) sync.py — содержит пароль root от старого сервера
+# 2) github_token.txt — токен доступа к GitHub
+sync.py
+github_token.txt

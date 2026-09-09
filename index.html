@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Залы мира 2025 — каталог</title>
+<style>
+*{box-sizing:border-box}
+:root{--ink:#1a1a19;--body:#3a3a37;--mut:#7a776f;--line:#e2ded5;--bg:#fbfaf7;--card:#fff;--acc:#9a3412;--accbg:#fdf3ec}
+body{margin:0;background:var(--bg);color:var(--body);
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+h1,h2,h3,.ser{font-family:Georgia,"Times New Roman",serif;font-weight:400;color:var(--ink)}
+a{color:var(--acc)}
+header{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.kick{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);font-weight:600;margin-bottom:18px}
+h1{font-size:56px;line-height:1.06;margin:0 0 20px;letter-spacing:-.015em}
+.lead{font-size:19px;max-width:660px;color:var(--body)}
+.lead b{color:var(--ink);font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);
+ border:1px solid var(--line);margin:44px 0 0}
+.st{background:var(--bg);padding:20px 18px}
+.st .n{font-family:Georgia,serif;font-size:34px;line-height:1;color:var(--ink)}
+.st .l{font-size:12.5px;color:var(--mut);margin-top:8px;letter-spacing:.02em}
+nav{position:sticky;top:0;background:rgba(251,250,247,.96);backdrop-filter:blur(8px);
+ border-bottom:1px solid var(--line);z-index:20;padding:12px 0}
+.navin{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+nav a{font-size:13.5px;text-decoration:none;color:var(--body);padding:6px 11px;border-radius:3px;white-space:nowrap}
+nav a:hover{background:var(--accbg);color:var(--acc)}
+nav a .c{color:var(--mut);font-size:11.5px;margin-left:4px}
+#q{margin-left:auto;padding:7px 12px;border:1px solid var(--line);border-radius:3px;font-size:13.5px;
+ background:#fff;width:210px;font-family:inherit;color:var(--ink)}
+#q:focus{outline:none;border-color:var(--acc)}
+section{padding:60px 0 10px;border-bottom:1px solid var(--line)}
+.shead{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+h2{font-size:34px;margin:0;letter-spacing:-.01em}
+.badge{font-size:12.5px;color:var(--acc);background:var(--accbg);padding:3px 10px;border-radius:20px;font-weight:600}
+.sdesc{color:var(--mut);font-size:15px;margin:0 0 28px;max-width:640px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:20px 22px;margin-bottom:10px}
+.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.nm{font-family:Georgia,serif;font-size:20px;color:var(--ink);line-height:1.25}
+.loc{font-size:13.5px;color:var(--mut);margin-top:5px}
+.cap{font-family:Georgia,serif;font-size:26px;color:var(--acc);white-space:nowrap;text-align:right;line-height:1.1}
+.cap small{display:block;font-family:inherit;font-size:11px;color:var(--mut);letter-spacing:.06em;
+ text-transform:uppercase;margin-top:3px;font-weight:600}
+.cap.txt{font-size:15px;max-width:210px;white-space:normal;line-height:1.35;color:var(--ink)}
+.photos{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:16px}
+.photos img{width:100%;height:150px;object-fit:cover;border-radius:4px;border:1px solid var(--line);display:block;background:#eee;cursor:zoom-in;transition:transform .15s}
+.photos img:hover{transform:scale(1.02)}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.93);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out}
+.lightbox img{max-width:92vw;max-height:92vh;object-fit:contain;border-radius:4px;box-shadow:0 0 40px rgba(0,0,0,.5)}
+.lb-close{position:absolute;top:14px;right:24px;color:#fff;font-size:40px;line-height:1;cursor:pointer;font-family:Georgia,serif;z-index:2}
+.lb-nav{position:absolute;top:50%;transform:translateY(-50%);color:#fff;font-size:52px;cursor:pointer;user-select:none;padding:12px;font-family:Georgia,serif;z-index:2}
+.lb-prev{left:12px}
+.lb-next{right:12px}
+.lb-count{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#ddd;font-size:14px;z-index:2}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px 26px;
+ margin-top:16px;padding-top:15px;border-top:1px solid var(--line)}
+.f .k{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:600;margin-bottom:3px}
+.f .v{font-size:14px;color:var(--ink)}
+.nd{color:#b3aea4;font-style:italic}
+.note{font-size:14.5px;color:var(--body);margin-top:14px;padding-left:14px;border-left:2px solid var(--line)}
+.src{margin-top:14px;font-size:13px}
+.src a{text-decoration:none;border-bottom:1px solid #e6c9b6}
+.src a:hover{border-bottom-color:var(--acc)}
+.src .more{color:var(--mut);margin-left:10px}
+.nores{padding:40px 0;color:var(--mut);display:none}
+footer{padding:56px 0 80px;color:var(--mut);font-size:14px}
+footer h3{font-size:20px;margin:0 0 12px;color:var(--ink)}
+footer p{max-width:700px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin:36px 0 0}
+.bar{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:13.5px}
+.bar .bn{width:150px;color:var(--ink);flex:none}
+.bar .bb{height:9px;background:var(--acc);border-radius:2px;min-width:3px;opacity:.82}
+.bar .bv{color:var(--mut);font-size:12.5px}
+@media(max-width:760px){h1{font-size:36px}.wrap{padding:0 18px}#q{width:100%;margin:8px 0 0}
+ .cap{text-align:left}.two{grid-template-columns:1fr;gap:28px}}
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){
+       m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+   })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=112264509', 'ym');
+
+   ym(112264509, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/112264509" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head><body>
+
+<header><div class="wrap">
+<div class="kick">Архитектура залов · выпуск 2025</div>
+<h1>Залы мира,<br>сданные в 2025 году</h1>
+<p class="lead" id="lead">Загрузка каталога…</p>
+<div class="stats" id="stats"></div>
+</div></header>
+
+<nav><div class="wrap navin" id="nav"></div></nav>
+<div class="wrap" id="content">
+<div class="nores" id="nr">Ничего не найдено. Попробуйте другой запрос.</div>
+</div>
+
+<footer><div class="wrap"><div class="ser"><h3>О каталоге</h3></div>
+<p>В подборку включены залы, строительство которых завершено или которые официально открыты в 2025 календарном году.
+Данные хранятся в файле <b>halls-2025.csv</b>, фотографии — в папке <b>photos/</b>. Обновите CSV или добавьте фото в папку —
+каталог подхватит изменения автоматически.</p>
+<p style="margin-top:22px;color:var(--mut)">Подготовлено для сообщества «Архитектура залов» · vk.ru/archhalls</p>
+</div></footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lb-close" id="lbClose">&times;</span>
+  <span class="lb-nav lb-prev" id="lbPrev">&#8249;</span>
+  <img id="lbImg" src="" alt="">
+  <span class="lb-nav lb-next" id="lbNext">&#8250;</span>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+<script src="catalog.js"></script>
+</body></html>
